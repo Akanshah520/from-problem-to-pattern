@@ -24,4 +24,8 @@ The goal is usually to maximize or minimize window length.
 ---
 
 ## Problems Covered
-- Maximum Sum Subarray of Size K (Fixed Window)
+### 1. Maximum Sum Subarray of Size K
+- Fixed-size sliding window
+- Maintains window sum incrementally
+- Avoids recomputation of overlapping subarrays
+
