@@ -29,3 +29,9 @@ The goal is usually to maximize or minimize window length.
 - Maintains window sum incrementally
 - Avoids recomputation of overlapping subarrays
 
+### 2. Longest Subarray with Sum ≤ K
+- Variable-size sliding window
+- Works only for non-negative numbers
+- Demonstrates dynamic window contraction
+
+
