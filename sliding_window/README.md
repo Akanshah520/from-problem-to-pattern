@@ -15,23 +15,38 @@ This pattern is applicable when:
 
 ### Fixed-Size Window
 The window size is constant and known in advance.
-The goal is usually to compute an aggregate (sum, average, max, min).
+Used when the problem asks for an aggregate over a fixed range.
 
 ### Variable-Size Window
 The window size changes dynamically based on a condition.
-The goal is usually to maximize or minimize window length.
+Used when the goal is to maximize or minimize window length
+while maintaining a constraint.
 
 ---
 
 ## Problems Covered
+
 ### 1. Maximum Sum Subarray of Size K
-- Fixed-size sliding window
-- Maintains window sum incrementally
-- Avoids recomputation of overlapping subarrays
+**Objective:**  
+Find the maximum sum of any contiguous subarray of size `k`.
+
+- Window Type: Fixed-size
+- Strategy: Maintain window sum by adding the entering element and
+  removing the exiting element
+- Time Complexity: `O(n)`
+- Space Complexity: `O(1)`
+
+---
 
 ### 2. Longest Subarray with Sum ≤ K
-- Variable-size sliding window
-- Works only for non-negative numbers
-- Demonstrates dynamic window contraction
+**Objective:**  
+Find the length of the longest contiguous subarray whose sum is
+less than or equal to `k`.
 
+- Window Type: Variable-size
+- Constraint: All elements must be non-negative
+- Strategy: Expand the window greedily and shrink it when the
+  sum constraint is violated
+- Time Complexity: `O(n)`
+- Space Complexity: `O(1)`
 
