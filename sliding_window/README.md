@@ -55,4 +55,9 @@ less than or equal to `k`.
 - Uses character frequency map
 - Demonstrates window validity based on distinct count
 
+### 4. Minimum Window Substring
+- Variable-size sliding window with frequency matching
+- Tracks when the window becomes valid
+- Greedily shrinks to find the minimum-length valid window
+- Considered a capstone sliding window problem
 
