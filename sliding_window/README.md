@@ -49,4 +49,10 @@ less than or equal to `k`.
   sum constraint is violated
 - Time Complexity: `O(n)`
 - Space Complexity: `O(1)`
+-
+### 3. Longest Substring with At Most K Distinct Characters
+- Variable-size sliding window on strings
+- Uses character frequency map
+- Demonstrates window validity based on distinct count
+
 
