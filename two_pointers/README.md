@@ -48,3 +48,16 @@ Used when:
 - Exploits sorted input to avoid extra space
 
 ---
+### 2. Two Sum II (Sorted Array)
+- Left–right pointer technique
+- Uses sorted input to eliminate extra space
+- Moves pointers deterministically based on sum comparison
+
+---
+
+## Interview Takeaway
+
+Two pointer problems test whether you:
+- Notice and exploit input properties
+- Optimize for space without sacrificing clarity
+- Maintain pointer invariants correctly
