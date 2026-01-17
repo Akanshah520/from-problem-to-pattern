@@ -30,6 +30,11 @@ Used when:
 - A feasibility check can validate a candidate answer
 - The feasibility condition is monotonic
 
+### 1. Binary Search in a Sorted Array
+- Classic index-based binary search
+- Establishes loop invariant and boundary correctness
+- Foundation for all advanced binary search problems
+
 ---
 
 ## Problems Covered
