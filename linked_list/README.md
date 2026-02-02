@@ -1,34 +1,34 @@
 # Linked List (Basic)
 
-The Linked List pattern focuses on pointer manipulation and edge-case handling
-in linear data structures.
+The Linked List pattern focuses on **pointer manipulation**, **edge-case handling**,
+and maintaining correctness while modifying a mutable data structure.
 
-Unlike arrays, linked lists require careful control of references,
-as elements are not stored contiguously in memory.
+Unlike arrays, linked lists do not allow random access, so correctness depends
+entirely on how references (`next` pointers) are updated.
 
-This pattern is tested to evaluate correctness, clarity,
-and comfort with mutable data structures.
+This pattern is tested to evaluate **clarity of thought**, not clever tricks.
 
 ---
 
 ## Core Idea
 
-Every operation on a linked list involves:
-- Updating pointers correctly
-- Preserving access to the remaining list
-- Handling null (`None`) boundaries safely
+Every linked list problem reduces to:
+- Knowing what each pointer represents
+- Updating pointers in the correct order
+- Handling `None` safely
 
-Small pointer mistakes often lead to broken lists,
-so clarity is more important than cleverness.
+Most bugs in linked list problems are **pointer bugs**, not algorithmic ones.
 
 ---
 
 ## What Interviewers Look For
 
 - Clean pointer updates
-- Explicit handling of edge cases
-- Correct use of temporary pointers
-- Calm explanation of list transformations
+- Correct handling of edge cases (head, tail, single node)
+- Use of dummy nodes where appropriate
+- Ability to explain pointer movement calmly
+
+Recursion is optional; **iterative solutions are preferred** unless recursion is explicitly requested.
 
 ---
 
@@ -36,7 +36,47 @@ so clarity is more important than cleverness.
 
 ### 1. Reverse Linked List
 - Fundamental pointer manipulation problem
-- Tests in-place reversal logic
-- Establishes linked list hygiene
+- Reverses the list in-place
+- Establishes basic pointer discipline
 
+---
+
+### 2. Merge Two Sorted Lists
+- Iterative merge using a dummy node
+- Reuses existing nodes (no extra allocation)
+- Tests ordered traversal and pointer updates
+
+---
+
+### 3. Linked List Cycle
+- Uses Floyd’s Tortoise and Hare algorithm
+- Detects cycles using fast and slow pointers
+- Avoids extra memory usage
+
+---
+
+### 4. Remove Nth Node From End of List
+- Uses two pointers with a fixed gap
+- Handles head removal safely using a dummy node
+- Tests off-by-one and boundary awareness
+
+---
+
+## Pattern Summary
+
+| Problem             | Key Technique             |
+|---------------------|---------------------------|
+| Reverse Linked List | Pointer reversal          |
+| Merge Two Lists     | Dummy node + tail pointer |
+| Cycle Detection     | Fast & slow pointers      |
+| Remove Nth Node     | Two-pointer gap           |
+
+---
+
+## Interview Takeaway
+
+Linked List problems test whether you can:
+- Think clearly while mutating a structure
+- Track multiple pointers without confusion
+- Handle edge cases without special casing everywhere
 ---
