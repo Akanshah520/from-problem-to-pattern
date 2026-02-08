@@ -3,7 +3,7 @@
 Tree problems test whether you can reason recursively and handle
 hierarchical data structures with clarity.
 
-For AI / ML Engineer interviews, the focus is **not** on advanced tree
+The focus is **not** on advanced tree
 algorithms, but on:
 - Correct traversal
 - Clear base cases
